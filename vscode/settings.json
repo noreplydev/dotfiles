@@ -1,0 +1,155 @@
+{
+  // font family
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  // workspace
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  // editor colors
+  "workbench.colorCustomizations": {
+    "tab.inactiveBackground": "#101010",
+    "tab.inactiveBorder": "#101010",
+    "tab.activeBackground": "#101010",
+    "tab.activeBorder": "#101010",
+    "tab.activeForeground": "#fff",
+    "tab.hoverBackground": "#101010",
+    "editorGroupHeader.tabsBackground": "#101010",
+    "activityBar.background": "#101010",
+    "sideBar.background": "#101010",
+    "tab.inactiveForeground": "#4e4e4e",
+    "statusBar.background": "#101010",
+    "statusBar.noFolderBackground": "#101010",
+    "statusBar.debuggingBackground": "#101010",
+    "editor.background": "#101010",
+    // highlight line [current line under this highlighted line]
+    "editor.lineHighlightBorder": "#7272721c",
+    "editor.lineHighlightBackground": "#7272721c",
+    "editorCursor.foreground": "#fff",
+    "statusBarItem.remoteBackground": "#0056ff"
+  },
+  // Syntax highlight
+  "editor.tokenColorCustomizations": {
+    "strings": "#d6a239",
+    "variables": "#9c9c9c",
+    "functions": "#4bfe9c",
+    "types": "#9c9c9c",
+    "keywords": "#9966aa",
+    "numbers": "#aeaeae",
+    "comments": "#515151",
+    "textMateRules": [
+      // Javascript
+      {
+        "scope": "keyword.operator.arithmetic.js",
+        "settings": {
+          "foreground": "#aeaeae"
+        }
+      },
+      {
+        "scope": "variable.other.constant.js",
+        "settings": {
+          "foreground": "#0095ff",
+        }
+      },
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#515151",
+        }
+      },
+      {
+        "scope": "variable.other.object.js",
+        "settings": {
+          "foreground": "#0095ff",
+        }
+      }
+    ]
+  },
+  // Editor theme
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "editor.hover.enabled": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "npm.keybindingsChangedWarningShown": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line-thin",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.renderLineHighlight": "line",
+  "editor.glyphMargin": false,
+  "editor.folding": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.enabled": true,
+  "security.workspace.trust.startupPrompt": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
+    "typescript": true,
+    "rust": true
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "files.associations": {
+    "*.md": "markdown",
+    "*.rs": "rust"
+  },
+  "markdown-preview-enhanced.liveUpdate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "errorLens.margin": "20px",
+  // tabs
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "liveServer.settings.file": "index.html",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontSize": 15,
+  "vim.commandLineModeKeyBindings": [],
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.visual": "underline",
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false
+  },
+  "editor.lineNumbers": "relative",
+  "workbench.iconTheme": "material-icon-theme",
+  "errorLens.excludeBySource": [
+    "rust-analyzer(type-mismatch)",
+    "ts(2304)",
+    "eslint(no-labels)"
+  ],
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.tabs.title": "_",
+  "terminal.integrated.defaultLocation": "view",
+  "workbench.panel.defaultLocation": "right", // layout default direction
+  "workbench.sideBar.location": "left",
+  "workbench.colorTheme": "Default Dark+",
+  // format on save
+  "editor.formatOnSave": true,
+  "terminal.integrated.env.linux": {},
+  "git.terminalAuthentication": false,
+  "window.zoomLevel": 2,
+  "git.autofetch": "all",
+  "workbench.activityBar.visible": false,
+  "window.commandCenter": false,
+  "workbench.startupEditor": "none",
+  "window.restoreFullscreen": true,
+}
