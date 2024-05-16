@@ -1,6 +1,4 @@
 {
-  // font family
-  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   // workspace
   "security.workspace.trust.untrustedFiles": "newWindow",
@@ -33,7 +31,7 @@
     "functions": "#4bfe9c",
     "types": "#9c9c9c",
     "keywords": "#9966aa",
-    "numbers": "#aeaeae",
+    "numbers": "#00a27f",
     "comments": "#515151",
     "textMateRules": [
       // Javascript
@@ -66,13 +64,12 @@
   // Editor theme
   "workbench.preferredDarkColorTheme": "Visual Studio Dark",
   "editor.hover.enabled": true,
-  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.horizontal": "visible",
   "npm.keybindingsChangedWarningShown": true,
   "editor.cursorBlinking": "smooth",
   "editor.cursorStyle": "line-thin",
-  "editor.minimap.enabled": false,
   "editor.scrollbar.verticalScrollbarSize": 6,
-  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.scrollbar.horizontalScrollbarSize": 6,
   "editor.hideCursorInOverviewRuler": true,
   "editor.renderLineHighlight": "line",
   "editor.glyphMargin": false,
@@ -81,7 +78,7 @@
   "editor.inlineSuggest.enabled": true,
   "security.workspace.trust.startupPrompt": "always",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": true,
     "markdown": true,
     "scminput": false,
@@ -89,24 +86,20 @@
     "typescript": true,
     "rust": true
   },
-  "liveServer.settings.donotVerifyTags": true,
   "files.associations": {
     "*.md": "markdown",
     "*.rs": "rust"
   },
-  "markdown-preview-enhanced.liveUpdate": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": [
     "javascript"
   ],
-  "errorLens.margin": "20px",
   // tabs
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
-  "liveServer.settings.file": "index.html",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.fontSize": 15,
   "vim.commandLineModeKeyBindings": [],
@@ -127,10 +120,10 @@
   ],
   "vim.handleKeys": {
     "<C-c>": false,
-    "<C-v>": false
+    "<C-v>": false,
+    "<C-x>": false
   },
   "editor.lineNumbers": "relative",
-  "workbench.iconTheme": "material-icon-theme",
   "errorLens.excludeBySource": [
     "rust-analyzer(type-mismatch)",
     "ts(2304)",
@@ -138,18 +131,128 @@
   ],
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.tabs.title": "_",
-  "terminal.integrated.defaultLocation": "view",
-  "workbench.panel.defaultLocation": "right", // layout default direction
+  "terminal.integrated.defaultLocation": "view", // layout default direction
   "workbench.sideBar.location": "left",
   "workbench.colorTheme": "Default Dark+",
   // format on save
   "editor.formatOnSave": true,
   "terminal.integrated.env.linux": {},
   "git.terminalAuthentication": false,
-  "window.zoomLevel": 2,
   "git.autofetch": "all",
-  "workbench.activityBar.visible": false,
   "window.commandCenter": false,
   "workbench.startupEditor": "none",
   "window.restoreFullscreen": true,
+  // language specific settings
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[rust]": {
+    "editor.tabSize": 4,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+  },
+  "[ego]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+  },
+  "terminal.external.windowsExec": "C:\\\\WINDOWS\\System32\\wsl.exe -d Ubuntu",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ]
+    }
+  },
+  "terminal.integrated.automationProfile.windows": {
+    "path": "C:\\WINDOWS\\System32\\wsl.exe -d Ubuntu",
+  },
+  "workbench.editor.enablePreview": false,
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": [
+        "-l"
+      ],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": [
+        "-l"
+      ]
+    },
+    "fish": {
+      "path": "fish",
+      "args": [
+        "-l"
+      ]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "csh": {
+      "path": "/bin/csh"
+    }
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "git.confirmSync": false,
+  "diffEditor.wordWrap": "off",
+  "vim.textwidth": 100,
+  "vim.targets.smartQuotes.aIncludesSurroundingSpaces": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "window.zoomLevel": 1,
+  "window.customTitleBarVisibility": "auto",
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.fontFamily": "JetBrains Mono",
+  // c development
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4}",
+  "editor.accessibilitySupport": "off",
+  "editor.largeFileOptimizations": false,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.associations.files": [
+    {
+      "icon": "ego",
+      "extensions": [
+        "ego",
+      ],
+      "format": "svg"
+    }
+  ],
+  "vsicons.customIconFolderPath": "/Users/noreplydev/Library/Application Support/Code",
+  "vsicons.presets.foldersAllDefaultIcon": true,
+  "editor.minimap.enabled": false,
 }
